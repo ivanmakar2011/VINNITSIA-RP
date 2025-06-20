@@ -1,1 +1,1 @@
-# VINNITSIA-RP
+# ВІННИЦЯ-RP
