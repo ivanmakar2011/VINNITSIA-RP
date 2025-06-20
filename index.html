@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ukraine GTA RP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #0d0d0d;
+      color: #fff;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #111;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    }
+    header h1 {
+      color: #00ffcc;
+    }
+    nav a {
+      margin-left: 20px;
+      color: #fff;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #00ffcc;
+    }
+    .hero {
+      height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url('https://i.imgur.com/UXJZmIY.jpg') no-repeat center center/cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 48px;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+    .btn {
+      padding: 12px 30px;
+      background-color: #00ffcc;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #00ddb8;
+    }
+    section {
+      padding: 80px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    section h3 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #00ffcc;
+    }
+    .factions {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .faction-card {
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+    .faction-card:hover {
+      transform: translateY(-5px);
+    }
+    footer {
+      background-color: #111;
+      text-align: center;
+      padding: 40px 20px;
+      color: #888;
+      margin-top: 40px;
+    }
+    .download, .donate {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .box {
+      background-color: #1f1f1f;
+      padding: 20px;
+      border-radius: 10px;
+      flex: 1;
+      min-width: 250px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ukraine GTA RP</h1>
+    <nav>
+      <a href="#home">Головна</a>
+      <a href="#about">Про сервер</a>
+      <a href="#factions">Фракції</a>
+      <a href="#download">Завантажити</a>
+      <a href="#donate">Донат</a>
+    </nav>
+  </header>
+
+  <div class="hero" id="home">
+    <h2>Ласкаво просимо на Ukraine GTA RP</h2>
+    <a class="btn" href="https://discord.gg" target="_blank">Приєднатися до Discord</a>
+  </div>
+
+  <section id="about">
+    <h3>Про сервер</h3>
+    <p>Наш сервер — це унікальний світ реалістичної української GTA:RP з фракціями, поліцією, військом, СБУ, ДСНС та багатьма іншими. Сервер має україномовну локалізацію, активну адміністрацію та часті івенти.</p>
+  </section>
+
+  <section id="factions">
+    <h3>Фракції</h3>
+    <div class="factions">
+      <div class="faction-card">НГУ — Національна гвардія України</div>
+      <div class="faction-card">НПУ — Національна поліція</div>
+      <div class="faction-card">СБУ — Служба безпеки України</div>
+      <div class="faction-card">ДСНС — Служба надзвичайних ситуацій</div>
+      <div class="faction-card">МОЗ — Міністерство охорони здоров’я</div>
+      <div class="faction-card">ДКВС — Кримінально-виконавча служба</div>
+    </div>
+  </section>
+
+  <section id="download">
+    <h3>Завантажити гру</h3>
+    <div class="download">
+      <div class="box">
+        <h4>MTA:SA клієнт</h4>
+        <p>Необхідний для входу на сервер. Встановлюється окремо.</p>
+        <a class="btn" href="https://mtasa.com" target="_blank">Завантажити</a>
+      </div>
+      <div class="box">
+        <h4>Discord сервер</h4>
+        <p>Приєднуйся до нашої спільноти, отримуй новини, оновлення та підтримку.</p>
+        <a class="btn" href="https://discord.gg" target="_blank">Увійти</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="donate">
+    <h3>Донат</h3>
+    <div class="donate">
+      <div class="box">
+        <h4>VIP доступ</h4>
+        <p>Отримай доступ до унікальних скінів, авто та функцій, підтримай сервер.</p>
+        <a class="btn" href="#">Донатити</a>
+      </div>
+      <div class="box">
+        <h4>Підтримка</h4>
+        <p>Будь-яка сума — важлива. Завдяки вам ми покращуємо сервер щодня!</p>
+        <a class="btn" href="#">Переказати</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Ukraine GTA RP | Всі права захищені
+  </footer>
+</body>
+</html>
