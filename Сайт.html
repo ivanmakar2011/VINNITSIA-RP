@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VINNYTSIA RP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #0d0d0d;
+      color: #fff;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #111;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    }
+    header h1 {
+      color: #00ffcc;
+    }
+    nav a {
+      margin-left: 20px;
+      color: #fff;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #00ffcc;
+    }
+    .hero {
+      height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url('https://ukraine-gta.com.ua/img/bg.jpg') no-repeat center center/cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 48px;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+    .btn {
+      padding: 12px 30px;
+      background-color: #00ffcc;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #00ddb8;
+    }
+    section {
+      padding: 80px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    section h3 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #00ffcc;
+    }
+    .factions {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .faction-card {
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+    .faction-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    .faction-card:hover {
+      transform: translateY(-5px);
+    }
+    footer {
+      background-color: #111;
+      text-align: center;
+      padding: 40px 20px;
+      color: #888;
+      margin-top: 40px;
+    }
+    .download, .donate {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .box {
+      background-color: #1f1f1f;
+      padding: 20px;
+      border-radius: 10px;
+      flex: 1;
+      min-width: 250px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>VINNYTSIA RP</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#factions">Factions</a>
+      <a href="#download">Download</a>
+      <a href="#donate">Donate</a>
+    </nav>
+  </header>
+
+  <div class="hero" id="home">
+    <h2>Welcome to VINNYTSIA RP</h2>
+    <a class="btn" href="https://discord.gg" target="_blank">Join Discord</a>
+  </div>
+
+  <section id="about">
+    <h3>About the Server</h3>
+    <p>Our server is a unique Ukrainian GTA:RP world with real factions, police, army, SBU, emergency services and more. It features a full Ukrainian interface, active administration and regular events.</p>
+  </section>
+
+  <section id="factions">
+    <h3>Factions</h3>
+    <div class="factions">
+      <div class="faction-card">
+        <img src="https://ukraine-gta.com.ua/img/ngu.jpg" alt="NGU">
+        <h4>National Guard of Ukraine (NGU)</h4>
+      </div>
+      <div class="faction-card">
+        <img src="https://ukraine-gta.com.ua/img/police.jpg" alt="NPU">
+        <h4>National Police of Ukraine (NPU)</h4>
+      </div>
+      <div class="faction-card">
+        <img src="https://ukraine-gta.com.ua/img/sbu.jpg" alt="SBU">
+        <h4>Security Service of Ukraine (SBU)</h4>
+      </div>
+      <div class="faction-card">
+        <img src="https://ukraine-gta.com.ua/img/dsns.jpg" alt="SES">
+        <h4>State Emergency Service (SES)</h4>
+      </div>
+      <div class="faction-card">
+        <img src="https://ukraine-gta.com.ua/img/moz.jpg" alt="MOH">
+        <h4>Ministry of Health (MOH)</h4>
+      </div>
+      <div class="faction-card">
+        <img src="https://ukraine-gta.com.ua/img/dkvs.jpg" alt="DKVS">
+        <h4>Penitentiary Service (DKVS)</h4>
+      </div>
+    </div>
+  </section>
+
+  <section id="download">
+    <h3>Download</h3>
+    <div class="download">
+      <div class="box">
+        <h4>MTA:SA Client</h4>
+        <p>Required to enter the server. Install it separately.</p>
+        <a class="btn" href="https://mtasa.com" target="_blank">Download</a>
+      </div>
+      <div class="box">
+        <h4>Discord Server</h4>
+        <p>Join our community for news, updates and support.</p>
+        <a class="btn" href="https://discord.gg" target="_blank">Join</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="donate">
+    <h3>Donate</h3>
+    <div class="donate">
+      <div class="box">
+        <h4>VIP Access</h4>
+        <p>Get unique skins, cars and features — support the server.</p>
+        <a class="btn" href="#">Donate</a>
+      </div>
+      <div class="box">
+        <h4>Support</h4>
+        <p>Every sum matters. Thanks to you we improve every day!</p>
+        <a class="btn" href="#">Contribute</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 VINNYTSIA RP | All rights reserved
+  </footer>
+</body>
+</html>
